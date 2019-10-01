@@ -1,0 +1,134 @@
+/*
+custom-primary: #6D64FF
+custom-secondary: #A759FF
+custom-Complementrylement: #FFD54A
+*/
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/**
+ * Custom colors 
+ */
+.custom-primary-text {
+  color: #6D64FF !important;
+}
+.custom-primary-bg {
+  background-color: #6D64FF !important;
+}
+.custom-secondary-text {
+  color: #A759FF !important;
+}
+.custom-secondary-bg {
+  background-color: #A759FF !important;
+}
+.custom-complementry-text {
+  color: #FFD54A !important;
+}
+.custom-complementry-bg {
+  background-color: #FFD54A !important;
+}
+
+/**
+ * Menu 
+ */
+.logo-font{
+  font-family: 'Righteous', cursive;
+  font-size: 35px;
+}
+.vertical-divider {
+  height: 45px;
+  width: 1px;
+}
+
+/**
+ * Header / Hero 
+ */
+.section {
+  height: 90vh;
+  min-height: 400px;
+}
+.tilt-right {
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+}
+
+/**
+ * Section Splitter
+ */
+.section-splitter {
+  height: 100px;
+}
+
+/**
+ * Colors Sections
+ */
+.color-box {
+  min-width: 75px;
+  min-height: 75px;
+  max-width: 75px;
+  max-height: 75px;
+}
+
+/**
+ * Input Fields
+ */
+.group {
+  position:relative;
+  margin-bottom:35px;
+}
+input {
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  border:none;
+  border-bottom:1px solid #757575;
+}
+input:focus {
+  outline:none;
+}
+label {
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
+input:focus ~ label, input:valid ~ label {
+  top:-20px;
+  font-size:14px;
+  color:#6D64FF;
+}
+.bar {
+  position:relative;
+  display:block;
+  width:300px;
+}
+.bar:before, .bar:after 	{
+  content:'';
+  height:2px;
+  width:0;
+  bottom:1px;
+  position:absolute;
+  background:#6D64FF;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%;
+}
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+/**
+ * Typography
+ */
+.devui-tag {
+  font-size: 0.7em;
+}
