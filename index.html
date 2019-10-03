@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
+
   <title>Developer-UI | UI Kits For The Web</title>
 
   <!-- Meta Tags -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  
+
   <!-- Google Font for logo -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Righteous&display=swap" rel="stylesheet">
 
   <!-- Bootstrap 4.3.1 CDN -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+
   <!-- Bootstrap Jquery -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  
+
+  <link rel="stylesheet" href="Assets/css/main.css"/>
   <link rel="stylesheet" href="Assets/css/style.css"/>
+  <link rel="stylesheet" href="Assets/fonts/fontawesome/css/all.min.css"/>
 
 </head>
 <body>
-  
+
   <!--Main Navigation Bar-->
   <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-white">
     <a class="navbar-brand ml-2 logo-font text-dark" href="/index.php">DEVELOPER-UI</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -36,7 +38,7 @@
       </ul>
       <ul class="navbar-nav navbar-right mr-2">
         <li class="nav-item active my-auto mx-3">
-          <a class="nav-link text-dark" href="#">Home</a>
+          <a class="nav-link text-primary" href="#">Home</a>
         </li>
         <li class="nav-item my-auto mx-3">
           <a class="nav-link text-dark" href="#">Features</a>
@@ -52,12 +54,12 @@
         </li>
         <li class="nav-item my-auto mr-2">
           <a href="login.php">
-            <button class="btn btn btn-outline-dark" type="submit">Github</button>
+            <button class="btn btn btn-outline-dark" type="submit"><i class="fab fa-github pr-2"></i>Github</button>
           </a>
         </li>
         <li class="nav-item my-auto mx-2">
           <a href="signup.php">
-            <button class="btn btn btn-outline-dark" type="submit">Download</button>
+            <button class="btn btn btn-outline-dark" type="submit"><i class="fas fa-download pr-2"></i>Download</button>
           </a>
         </li>
       </ul>
@@ -70,14 +72,14 @@
           <div class="d-flex flex-wrap justify-content-around align-self-center text-dark w-100 mt-5">
             <!-- Left hand side of hero content -->
             <div>
-              <h1>Welcome to Developer-UI</h1>
+              <h1>Welcome to <span class="text-primary">Developer-UI</span></h1>
               <h5>A Free UI kit to speed up your developement</h5>
               <p>Built utilising Bootstrap 4.3.1</p>
-              <button class="btn btn-dark px-3">Explore!</button>
+              <button class="btn btn-primary px-3">Explore!</button>
             </div>
             <!-- Right hand side of hero content -->
             <div>
-              <img 
+              <img
                 src="Assets/svg/ui_presenting.svg"
                 height="250px"
               />
@@ -86,79 +88,315 @@
       </div>
   </header>
 
-  <!-- Hero contained-->
-  <!-- <div class="section-splitter custom-primary-bg">
-    <div class="container d-flex h-100">
-      <div class="d-flex flex-wrap justify-content-around align-self-center text-dark w-100">
-        <h1>Free Developer-UI kit </h1>
-      </div>  
-    </div>
-  </div> -->
 
-  <!-- Card section for top 3 UI Kits -->
-  <div class="section">
-    <div class="container h-100">
-        <h1>Colors</h1>
-        <div class="d-flex flex-wrap justify-content-around align-self-start text-dark w-100 mt-5">
-          
-          <!-- Primary Color / #6D64FF -->
-          <div class="text-center">
-            <div class="color-box rounded custom-primary-bg mx-auto"></div>
-            <p>#6D64FF</p>
-            <p class="devui-tag">Primary</p>
-          </div>
-          
-          <!-- Secondary Color / #A759FF -->
-          <div class="text-center">
-            <div class="color-box rounded custom-secondary-bg mx-auto"></div>
-            <p>#A759FF</p>
-            <p class="devui-tag">Secondary</p>
-          </div>
-          
-          <!-- Complementry Color / #FFD54A -->
-          <div class="text-center">
-            <div class="color-box rounded custom-complementry-bg mx-auto"></div>
-            <p>#FFD54A</p>
-            <p class="devui-tag">Complementry</p>
-          </div>
-          
-          <!-- Light Color / #f8f9fa -->
-          <div class="text-center">
-            <div class="color-box rounded bg-light mx-auto"></div>
-            <p>#f8f9fa</p>
-            <p class="devui-tag">Light</p>
-          </div>
-          
-          <!-- Dark Color / #343a40 -->
-          <div class="text-center">
-            <div class="color-box rounded bg-dark mx-auto"></div>
-            <p>#343a40</p>
-            <p class="devui-tag">Dark</p>
-          </div>
-          
-          <!-- Danger Color / #f8f9fa -->
-          <div class="text-center">
-            <div class="color-box rounded bg-danger mx-auto"></div>
-            <p>#f8f9fa</p>
-            <p class="devui-tag">Danger</p>
-          </div>
-          
-          <!-- Success Color / #343a40 -->
-          <div class="text-center">
-            <div class="color-box rounded bg-success mx-auto"></div>
-            <p>#343a40</p>
-            <p class="devui-tag">Success</p>
-          </div>
+  <!-- Colors Section for the UI Kit -->
+  <div class="container my-5">
+    <h1>Colors</h1>
+    <div class="d-flex flex-wrap justify-content-around align-self-start text-dark w-100 mt-5">
+
+      <!-- Primary Color / #6D64FF -->
+      <div class="text-center">
+        <div class="color-box rounded bg-primary mx-auto"></div>
+        <p>#6D64FF</p>
+        <p class="devui-tag">Primary</p>
+      </div>
+
+      <!-- Secondary Color / #A759FF -->
+      <div class="text-center">
+        <div class="color-box rounded bg-secondary mx-auto"></div>
+        <p>#A759FF</p>
+        <p class="devui-tag">Secondary</p>
+      </div>
+
+      <!-- Dark Color / #343a40 -->
+      <div class="text-center">
+        <div class="color-box rounded bg-dark mx-auto"></div>
+        <p>#343a40</p>
+        <p class="devui-tag">Dark</p>
+      </div>
+
+      <!-- Light Color / #f8f9fa -->
+      <div class="text-center">
+        <div class="color-box rounded bg-light mx-auto"></div>
+        <p>#f8f9fa</p>
+        <p class="devui-tag">Light</p>
+      </div>
+
+      <!-- Warning Color / #FFD54A -->
+      <div class="text-center">
+        <div class="color-box rounded bg-warning mx-auto"></div>
+        <p>#FFD54A</p>
+        <p class="devui-tag">Warning</p>
+      </div>
+
+      <!-- Danger Color / #f8f9fa -->
+      <div class="text-center">
+        <div class="color-box rounded bg-danger mx-auto"></div>
+        <p>#dc3545</p>
+        <p class="devui-tag">Danger</p>
+      </div>
+
+      <!-- Success Color / #343a40 -->
+      <div class="text-center">
+        <div class="color-box rounded bg-success mx-auto"></div>
+        <p>#343a40</p>
+        <p class="devui-tag">Success</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Input Section For the UI Kit -->
+  <div class="container my-5">
+    <h1>Buttons</h1>
+      <h6 class="text-dark mt-5">Normal</h6>
+      <div class="d-flex flex-wrap justify-content-around align-self-start w-100 mt-2">
+        <button class="btn btn-outline-primary mt-2" type="submit">Primary</button>
+        <button class="btn btn-outline-secondary mt-2" type="submit">Secondary</button>
+        <button class="btn btn-outline-dark mt-2" type="submit">Dark</button>
+        <button class="btn btn-outline-light mt-2" type="submit">Light</button>
+        <button class="btn btn-outline-warning mt-2" type="submit">Warning</button>
+        <button class="btn btn-outline-danger mt-2" type="submit">Danger</button>
+        <button class="btn btn-outline-success mt-2" type="submit">Success</button>
+      </div>
+      <div class="d-flex flex-wrap justify-content-around align-self-start w-100 mt-2">
+        <button class="btn btn-primary mt-2" type="submit">Primary</button>
+        <button class="btn btn-secondary mt-2" type="submit">Secondary</button>
+        <button class="btn btn-dark mt-2" type="submit">Dark</button>
+        <button class="btn btn-light mt-2 text-dark" type="submit">Light</button>
+        <button class="btn btn-warning mt-2" type="submit">Warning</button>
+        <button class="btn btn-danger mt-2" type="submit">Danger</button>
+        <button class="btn btn-success mt-2" type="submit">Success</button>
+      </div>
+
+      <h6 class="text-dark mt-5">Edged</h6>
+      <div class="d-flex flex-wrap justify-content-around align-self-start w-100 mt-2">
+        <button class="btn btn-outline-primary mt-2 rounded-0" type="submit">Primary</button>
+        <button class="btn btn-outline-secondary mt-2 rounded-0" type="submit">Secondary</button>
+        <button class="btn btn-outline-dark mt-2 rounded-0" type="submit">Dark</button>
+        <button class="btn btn-outline-light mt-2 rounded-0" type="submit">Light</button>
+        <button class="btn btn-outline-warning mt-2 rounded-0" type="submit">Warning</button>
+        <button class="btn btn-outline-danger mt-2 rounded-0" type="submit">Danger</button>
+        <button class="btn btn-outline-success mt-2 rounded-0" type="submit">Success</button>
+      </div>
+      <div class="d-flex flex-wrap justify-content-around align-self-start w-100 mt-2">
+        <button class="btn btn-primary mt-2 rounded-0" type="submit">Primary</button>
+        <button class="btn btn-secondary mt-2 rounded-0" type="submit">Secondary</button>
+        <button class="btn btn-dark mt-2 rounded-0" type="submit">Dark</button>
+        <button class="btn btn-light mt-2 rounded-0 text-dark" type="submit">Light</button>
+        <button class="btn btn-warning mt-2 rounded-0" type="submit">Warning</button>
+        <button class="btn btn-danger mt-2 rounded-0" type="submit">Danger</button>
+        <button class="btn btn-success mt-2 rounded-0" type="submit">Success</button>
+      </div>
+
+      <h6 class="text-dark mt-5">With Icons</h6>
+      <div class="d-flex flex-wrap justify-content-around align-self-start w-100 mt-2">
+        <button class="btn btn-outline-primary mt-2" type="submit"><i class="far fa-user-circle pr-2"></i>Profile</button>
+        <button class="btn btn-outline-secondary mt-2" type="submit"><i class="fas fa-book pr-2"></i>Documentation</button>
+        <button class="btn btn-outline-warning mt-2" type="submit"><i class="fas fa-exclamation-triangle pr-2"></i>Warning</button>
+        <button class="btn btn-outline-danger mt-2" type="submit"><i class="fas fa-times pr-2"></i>Cancel</button>
+        <button class="btn btn-outline-success mt-2" type="submit"><i class="fas fa-check pr-2"></i>Completed</button>
+      </div>
+      <div class="d-flex flex-wrap justify-content-around align-self-start w-100 mt-2">
+        <button class="btn btn-primary mt-2" type="submit"><i class="far fa-user-circle pr-2"></i>Profile</button>
+        <button class="btn btn-secondary mt-2" type="submit"><i class="fas fa-book pr-2"></i>Documentation</button>
+        <button class="btn btn-warning mt-2" type="submit"><i class="fas fa-exclamation-triangle pr-2"></i>Warning</button>
+        <button class="btn btn-danger mt-2" type="submit"><i class="fas fa-times pr-2"></i>Cancel</button>
+        <button class="btn btn-success mt-2" type="submit"><i class="fas fa-check pr-2"></i>Completed</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Input Section For the UI Kit -->
+  <div class="container my-5">
+    <h1>Typography</h1>
+    <div class="d-flex flex-wrap justify-content-around align-self-start text-dark w-100 mt-5">
+      <div class="col mb-5">
+        <div class="my-2">
+          <h6 class="text-primary">Fonts</h6>
+          <h2 class="font-weight-bold">AaBbCc</h2>
+          <h4 class="font-weight-bold">Montserrat Bold</h4>
         </div>
+        <div class="my-2">
+          <h2 class="font-weight-medium">AaBbCc</h2>
+          <h4 class="font-weight-medium">Montserrat Medium</h4>
+        </div>
+        <div class="my-2">
+          <h2 class="font-weight-light">AaBbCc</h2>
+          <h4 class="font-weight-light">Montserrat Light</h4>
+        </div>
+      </div>
+      <div class="col mb-5">
+        <div class="my-2">
+          <h6 class="text-primary">Headlines</h6>
+          <h1>h1 headline</h1>
+          <h2>h2 headline</h2>
+          <h3>h3 headline</h3>
+          <h4>h4 headline</h4>
+          <h5>h5 headline</h5>
+          <h6>h6 headline</h6>
+        </div>
+      </div>
+      <div class="container">
+        <div class="my-2">
+          <h6 class="text-primary">Body Text</h6>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          <br><strong>dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</strong>
+          <br><i>nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</i>
+          <br><small>dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</small>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="group">
-    <input type="text" class="w-100" name="emailusername" required>
-    <span class="bar w-100"></span>
-    <label class="h6 text-dark">Username / Email</label>
+  <!-- Input Section For the UI Kit -->
+    <div class="container my-5">
+      <h1>Input</h1>
+      <div class="d-flex flex-wrap justify-content-around align-self-start text-dark w-100 mt-5">
+          <!-- Email / Username input field -->
+          <div class="m-3">
+            <input name="email" type="text" placeholder="Email / Username"/>
+          </div>
+          <!-- Success Example with input field -->
+          <div class="m-3">
+            <input name="success" type="text" placeholder="Success"/>
+          </div>
+          <!-- Error Example with input field -->
+          <div class="m-3">
+            <input name="error" type="text" placeholder="Error" class="text-danger border-danger error" required/>
+          </div>
+          <!-- Disabled -->
+          <div class="m-3">
+            <input name="disabled" type="text" placeholder="Disabled" disabled/>
+          </div>
+      </div>
+    </div>
+
+  <!-- Input Section For the UI Kit -->
+  <div class="container my-5">
+    <h1>Slider</h1>
+    <div class="d-flex flex-wrap justify-content-around align-self-start text-dark w-100 mt-5">
+        <p>Content</p>
+    </div>
   </div>
 
+  <!-- Input Section For the UI Kit -->
+  <div class="container my-5">
+    <h1>Controls</h1>
+    <div class="d-flex flex-wrap justify-content-around align-self-start text-dark w-100 mt-5">
+        <p>Radio, Checkbox, Switch, File Upload</p>
+    </div>
+  </div>
+
+  <!-- Input Section For the UI Kit -->
+  <div class="container my-5">
+    <h1>Slider</h1>
+    <div class="d-flex flex-wrap justify-content-around align-self-start text-dark w-100 mt-5">
+        <p>Content</p>
+    </div>
+  </div>
+
+  <!-- Input Section For the UI Kit -->
+  <div class="container my-5">
+    <h1>Slider</h1>
+    <div class="d-flex flex-wrap justify-content-around align-self-start text-dark w-100 mt-5">
+        <p>Content</p>
+    </div>
+  </div>
+
+  <!-- Input Section For the UI Kit -->
+  <div class="container my-5">
+    <h1>Form Examples</h1>
+    <div class="d-flex flex-wrap justify-content-around align-self-start text-dark w-100 mt-5">
+        <p>Content</p>
+    </div>
+  </div>
+
+  <!-- Input Section For the UI Kit -->
+  <div class="container my-5">
+    <h1>Modals</h1>
+    <div class="d-flex flex-wrap justify-content-around align-self-start text-dark w-100 mt-5">
+        <p>Content</p>
+    </div>
+  </div>
+
+  <!-- Input Section For the UI Kit -->
+  <div class="container my-5">
+    <h1>Cards</h1>
+    <div class="d-flex flex-wrap justify-content-around align-self-start text-dark w-100 mt-5">
+        <p>Content</p>
+    </div>
+  </div>
+
+  <!-- Input Section For the UI Kit -->
+  <div class="container my-5">
+    <h1>Tool Tips</h1>
+    <div class="d-flex flex-wrap justify-content-around align-self-start text-dark w-100 mt-5">
+        <p>Content</p>
+    </div>
+  </div>
+
+  <!-- Input Section For the UI Kit -->
+  <div class="container my-5">
+    <h1>Alerts</h1>
+    <div class="d-flex flex-wrap justify-content-around align-self-start text-dark w-100 mt-5">
+        <p>Content</p>
+    </div>
+  </div>
   </body>
+
+  <!-- Input Section For the UI Kit -->
+  <div class="container my-5">
+    <h1>Nav bars</h1>
+    <div class="d-flex flex-wrap justify-content-around align-self-start text-dark w-100 mt-5">
+        <p>Content</p>
+    </div>
+  </div>
+
+  <!-- Input Section For the UI Kit -->
+  <div class="container my-5">
+    <h1>Typography</h1>
+    <div class="d-flex flex-wrap justify-content-around align-self-start text-dark w-100 mt-5">
+        <p>Content</p>
+    </div>
+  </div>
+
+  <!-- Input Section For the UI Kit -->
+  <div class="container my-5">
+    <h1>Icons</h1>
+    <div class="d-flex flex-wrap justify-content-around align-self-start text-dark w-100 mt-5">
+        <p>Content</p>
+    </div>
+  </div>
+
+  <!-- Input Section For the UI Kit -->
+  <div class="container my-5">
+    <h1>Examples</h1>
+    <div class="d-flex flex-wrap justify-content-around align-self-start text-dark w-100 mt-5">
+        <p>Content</p>
+    </div>
+  </div>
+
+  <!-- Input Section For the UI Kit -->
+  <div class="container my-5">
+    <h1>Documentation</h1>
+    <div class="d-flex flex-wrap justify-content-around align-self-start text-dark w-100 mt-5">
+        <p>Content</p>
+    </div>
+  </div>
+
+  <!-- Input Section For the UI Kit -->
+  <div class="container my-5">
+    <h1>Gallery</h1>
+    <div class="d-flex flex-wrap justify-content-around align-self-start text-dark w-100 mt-5">
+        <p>Content</p>
+    </div>
+  </div>
+
+  <!-- Input Section For the UI Kit -->
+  <div class="container my-5">
+    <h1>Footer</h1>
+    <div class="d-flex flex-wrap justify-content-around align-self-start text-dark w-100 mt-5">
+        <p>Content</p>
+    </div>
+  </div>
   </html>
-  
