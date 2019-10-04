@@ -115,12 +115,61 @@ input.error ::-webkit-input-placeholder {
   color: #343a40;
 }
 
+input.input-error:valid {
+  color: #dc3545;
+  border-color: #dc3545;
+}
+input.input-success:valid {
+  color: #28A745;
+  border-color: #28A745;
+}
 input:disabled {
   border: solid 2px #f8f9fa;
+  background-color: #f8f9fa;
 }
 /**
  * Typography
  */
 .devui-tag {
   font-size: 0.7em;
+}
+
+
+/**
+ * Checbox
+ */
+.checkbox input {
+  display: none;
+  z-index: -9999;
+}
+/* .checkbox {
+  display: block;
+} */
+.checkbox span {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: #ffffff;
+  border: 2px solid #343a40;
+  border-radius: 5px;
+}
+.checkbox input:checked + span {
+  background: #343a40;
+  background-image: url("http://developer-ui.andrewdetorres.com/Assets/images/Checkbox-mark.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.checkbox input:disabled + span {
+  background: #d6d6d6;
+  border: 2px solid #d6d6d6;
+}
+.checkbox input:disabled:checked + span {
+  background: #d6d6d6;
+  border: 2px solid #d6d6d6;
+  background-image: url("http://developer-ui.andrewdetorres.com/Assets/images/Checkbox-mark.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
