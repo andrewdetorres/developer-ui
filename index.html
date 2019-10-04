@@ -139,7 +139,7 @@
       <!-- Success Color / #343a40 -->
       <div class="text-center">
         <div class="color-box rounded bg-success mx-auto"></div>
-        <p>#343a40</p>
+        <p>#28A745</p>
         <p class="devui-tag">Success</p>
       </div>
     </div>
@@ -190,6 +190,7 @@
 
       <h6 class="text-dark mt-5">With Icons</h6>
       <div class="d-flex flex-wrap justify-content-around align-self-start w-100 mt-2">
+        <!-- Icon ojutlined primary -->
         <button class="btn btn-outline-primary mt-2" type="submit"><i class="far fa-user-circle pr-2"></i>Profile</button>
         <button class="btn btn-outline-secondary mt-2" type="submit"><i class="fas fa-book pr-2"></i>Documentation</button>
         <button class="btn btn-outline-warning mt-2" type="submit"><i class="fas fa-exclamation-triangle pr-2"></i>Warning</button>
@@ -258,11 +259,11 @@
           </div>
           <!-- Success Example with input field -->
           <div class="m-3">
-            <input name="success" type="text" placeholder="Success"/>
+            <input name="success" type="text" placeholder="Success*" class="input-success" required/>
           </div>
           <!-- Error Example with input field -->
           <div class="m-3">
-            <input name="error" type="text" placeholder="Error" class="text-danger border-danger error" required/>
+            <input name="error" type="text" placeholder="Error*" class="input-error" required/>
           </div>
           <!-- Disabled -->
           <div class="m-3">
@@ -273,35 +274,173 @@
 
   <!-- Input Section For the UI Kit -->
   <div class="container my-5">
-    <h1>Slider</h1>
-    <div class="d-flex flex-wrap justify-content-around align-self-start text-dark w-100 mt-5">
-        <p>Content</p>
-    </div>
-  </div>
-
-  <!-- Input Section For the UI Kit -->
-  <div class="container my-5">
     <h1>Controls</h1>
     <div class="d-flex flex-wrap justify-content-around align-self-start text-dark w-100 mt-5">
-        <p>Radio, Checkbox, Switch, File Upload</p>
+        <div>
+          <p>Checkbox</p>
+
+            <div class="row">
+              <div>
+                <label class="checkbox">
+                  <input type="checkbox" name="test"/>
+                  <span></span>
+                </label>
+              </div>
+              <div>
+                <p class="pl-3">Unchecked</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div>
+                <label class="checkbox">
+                  <input type="checkbox" name="test" checked/>
+                  <span></span>
+                </label>
+              </div>
+              <div>
+                <p class="pl-3">Checked</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div>
+                <label class="checkbox">
+                  <input type="checkbox" name="test" disabled/>
+                  <span></span>
+                </label>
+              </div>
+              <div>
+                <p class="pl-3">Disabled</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div>
+                <label class="checkbox">
+                  <input type="checkbox" name="test" disabled checked/>
+                  <span></span>
+                </label>
+              </div>
+              <div>
+                <p class="pl-3">Disabled Checked</p>
+              </div>
+            </div>
+          </div>
+
+        <div>
+          <p>Switch</p>
+
+          <div class="row">
+            <div>
+              <label class="checkbox">
+                <input type="checkbox" name="test"/>
+                <span></span>
+              </label>
+            </div>
+            <div>
+              <p class="pl-3">Unchecked</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div>
+              <label class="checkbox">
+                <input type="checkbox" name="test" checked/>
+                <span></span>
+              </label>
+            </div>
+            <div>
+              <p class="pl-3">Checked</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div>
+              <label class="checkbox">
+                <input type="checkbox" name="test" disabled/>
+                <span></span>
+              </label>
+            </div>
+            <div>
+              <p class="pl-3">Disabled</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div>
+              <label class="checkbox">
+                <input type="checkbox" name="test" disabled checked/>
+                <span></span>
+              </label>
+            </div>
+            <div>
+              <p class="pl-3">Disabled Checked</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+            <p>Radio</p>
+
+            <div class="row">
+              <div>
+                <label class="checkbox">
+                  <input type="checkbox" name="test"/>
+                  <span></span>
+                </label>
+              </div>
+              <div>
+                <p class="pl-3">Unchecked</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div>
+                <label class="checkbox">
+                  <input type="checkbox" name="test" checked/>
+                  <span></span>
+                </label>
+              </div>
+              <div>
+                <p class="pl-3">Checked</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div>
+                <label class="checkbox">
+                  <input type="checkbox" name="test" disabled/>
+                  <span></span>
+                </label>
+              </div>
+              <div>
+                <p class="pl-3">Disabled</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div>
+                <label class="checkbox">
+                  <input type="checkbox" name="test" disabled checked/>
+                  <span></span>
+                </label>
+              </div>
+              <div>
+                <p class="pl-3">Disabled Checked</p>
+              </div>
+            </div>
+          </div>
     </div>
   </div>
 
   <!-- Input Section For the UI Kit -->
   <div class="container my-5">
-    <h1>Slider</h1>
-    <div class="d-flex flex-wrap justify-content-around align-self-start text-dark w-100 mt-5">
-        <p>Content</p>
+      <h1>Slider</h1>
+      <div class="d-flex flex-wrap justify-content-around align-self-start text-dark w-100 mt-5">
+          <p>Content</p>
+      </div>
     </div>
-  </div>
-
-  <!-- Input Section For the UI Kit -->
-  <div class="container my-5">
-    <h1>Slider</h1>
-    <div class="d-flex flex-wrap justify-content-around align-self-start text-dark w-100 mt-5">
-        <p>Content</p>
-    </div>
-  </div>
 
   <!-- Input Section For the UI Kit -->
   <div class="container my-5">
