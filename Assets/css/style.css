@@ -142,13 +142,10 @@ input:disabled {
   display: none;
   z-index: -9999;
 }
-/* .checkbox {
-  display: block;
-} */
 .checkbox span {
   position: relative;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   display: inline-block;
   background: #ffffff;
   border: 2px solid #343a40;
@@ -172,4 +169,58 @@ input:disabled {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+/**
+ * Radio Group 
+ */
+
+
+.radio input {
+  display: none;
+  z-index: -9999;
+}
+.radio span {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background: #ffffff;
+  border: 2px solid #343a40;
+  border-radius: 100%;
+}
+.radio input:checked + span {
+  background: #343a40;
+  background-image: url("http://developer-ui.andrewdetorres.com/Assets/images/Radio-mark.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.radio input:disabled + span {
+  background: #d6d6d6;
+  border: 2px solid #d6d6d6;
+}
+.radio input:disabled:checked + span {
+  background: #d6d6d6;
+  border: 2px solid #d6d6d6;
+  background-image: url("http://developer-ui.andrewdetorres.com/Assets/images/Radio-mark.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/**
+ * Checkbox
+ */
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  border-color: #343a40;
+  background-color: #343A3C;
+}
+label.custom-control-label:before {
+  box-shadow: none !important;
+}
+.custom-switch .custom-control-input:disabled:checked ~ .custom-control-label::before {
+  background-color: #e9ecef;
+  border-color: #adb5bd;
 }
