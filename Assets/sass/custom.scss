@@ -5,4 +5,8 @@ $theme-colors: (
   "light": #eaeaea
 );
 
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 @import "../bootstrap/scss/bootstrap.scss";
