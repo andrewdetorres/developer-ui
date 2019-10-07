@@ -51,11 +51,12 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
  * Header / Hero
  */
 .section {
-  height: 85vh;
+  height: 90vh;
   min-height: 400px;
 }
 .tilt-right {
-  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
 }
 
 /**
@@ -138,14 +139,21 @@ input:disabled {
 /**
  * Checbox
  */
+
+label.checkbox,
+label.radio,
+label.custom-control-label {
+  margin-bottom: 5px;
+}
 .checkbox input {
   display: none;
   z-index: -9999;
 }
 .checkbox span {
   position: relative;
-  width: 15px;
-  height: 15px;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
   display: inline-block;
   background: #ffffff;
   border: 2px solid #343a40;
@@ -172,7 +180,7 @@ input:disabled {
 }
 
 /**
- * Radio Group 
+ * Radio Group
  */
 
 
@@ -182,8 +190,9 @@ input:disabled {
 }
 .radio span {
   position: relative;
-  width: 15px;
-  height: 15px;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
   display: inline-block;
   background: #ffffff;
   border: 2px solid #343a40;
@@ -223,4 +232,62 @@ label.custom-control-label:before {
 .custom-switch .custom-control-input:disabled:checked ~ .custom-control-label::before {
   background-color: #e9ecef;
   border-color: #adb5bd;
+}
+
+/**
+ * Custom Card 1
+ */
+
+.devui-card {
+  position: relative;
+  width: 90%;
+  max-width: 21rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+.devui-card .devui-card-overlay {
+  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  bottom: 0px;
+  border-radius: 5px;
+}
+
+.devui-card-image{
+  width: 100%;
+  border-radius: 5px;
+}
+
+.devui-card-details {
+  position: absolute;
+  text-align: right;
+  padding-left: 1em;
+  padding-right: 1em;
+  bottom: 15px;
+  right:15px;
+  line-height:0px;
+  color: #fff;
+  font-size: 0.8em;
+}
+
+/**
+ * Custom Card 1
+ */
+
+.devui-card-2 {
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+}
+
+.devui-card-details-2 {
+  position: absolute;
+  text-align: right;
+  padding-left: 1em;
+  padding-right: 1em;
+  top: 15px;
+  left:0px;
+  line-height:0px;
+  color: #fff;
+  font-size: 1.2em;
 }
