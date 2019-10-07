@@ -273,16 +273,17 @@ label.custom-control-label:before {
 }
 
 /**
- * Custom Card 1
+ * Custom Card 2
  */
 
-.devui-card-2 {
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+.card-tilt {
+  -webkit-clip-path: polygon(0 0%, 100% 0, 100% 90%, 0% 100%);
+  clip-path: polygon(0 0%, 100% 0, 100% 90%, 0% 100%);
 }
 
 .devui-card-details-2 {
   position: absolute;
-  text-align: right;
+  text-align: left;
   padding-left: 1em;
   padding-right: 1em;
   top: 15px;
@@ -290,4 +291,13 @@ label.custom-control-label:before {
   line-height:0px;
   color: #fff;
   font-size: 1.2em;
+}
+.devui-card .devui-card-overlay-2 {
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0));
+  position: absolute;
+  top:0px;
+  height: 50%;
+  width: 100%;
+  bottom: 0px;
+  border-radius: 5px;
 }
