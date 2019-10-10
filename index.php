@@ -107,7 +107,6 @@
   <?php require_once "Features/alerts.html";?>
   <?php require_once "Features/navbars.html";?>
   <?php require_once "Features/images.html";?>
-  <?php require_once "Features/icons.html";?>
   <?php require_once "Features/examples.html";?>
 
   <!-- Input Section For the UI Kit -->

@@ -8,28 +8,6 @@ body {
 }
 
 /**
- * Custom colors
- */
-.custom-primary-text {
-  color: #6D64FF !important;
-}
-.custom-primary-bg {
-  background-color: #6D64FF !important;
-}
-.custom-secondary-text {
-  color: #A759FF !important;
-}
-.custom-secondary-bg {
-  background-color: #A759FF !important;
-}
-.custom-complementry-text {
-  color: #FFD54A !important;
-}
-.custom-complementry-bg {
-  background-color: #FFD54A !important;
-}
-
-/**
  * Menu
  */
 .custom-toggler.navbar-toggler {
@@ -92,17 +70,6 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
   color: #343a40;
 }
 
-input {
-  font-weight: bold;
-  font-size: 15px;
-  min-width: 200px;
-  min-height: 35px;
-  padding: 10px 25px 10px 15px;
-  border-radius: 5px;
-  outline: none;
-  border: solid 1px #343a40;
-  color: #343a40;
-}
 input.error ::-webkit-input-placeholder {
   color: #343a40;
 }
@@ -116,18 +83,105 @@ input.error ::-webkit-input-placeholder {
   color: #343a40;
 }
 
-input.input-error:valid {
+.input-error:valid {
   color: #dc3545;
   border-color: #dc3545;
 }
-input.input-success:valid {
+.input-success:valid {
   color: #28A745;
   border-color: #28A745;
 }
 input:disabled {
-  border: solid 2px #f8f9fa;
-  background-color: #f8f9fa;
+  border-bottom: 1px solid #afafaf;
 }
+input:disabled ~ label{
+  color: #afafaf;
+}
+.custom-file-input {
+  position: absolute;
+}
+
+/**
+ * Custom input test
+ */
+
+.group {
+  position:relative;
+  margin-bottom:35px;
+}
+input {
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  border:none;
+  border-bottom:1px solid #757575;
+}
+input:focus {
+  outline:none;
+}
+
+.devui-input-label {
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
+
+input:focus ~ .devui-input-label, 
+input:not(:placeholder-shown) ~ .devui-input-label {
+  top:-20px;
+  font-size:14px;
+  color:#6D64FF;
+}
+
+.bar,
+.bar-error {
+  position:relative;
+  display:block;
+  width:300px;
+}
+
+.bar:before, .bar:after,
+.bar-success:before, .bar-success:after,
+.bar-error:before, .bar-error:after {
+  content:'';
+  height:2px;
+  width:0;
+  bottom:1px;
+  position:absolute;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
+
+.bar:before, .bar:after {
+  background:#6D64FF;
+}
+.bar-error:before, .bar-error:after {
+  background:#dc3545;
+}
+.bar-success:before, .bar-success:after {
+  background:#28A745;
+}
+.bar:before,
+.bar-success:before,
+.bar-error:before {
+  left:50%;
+}
+.bar:after,
+.bar-success:after,
+.bar-error:after {
+  right:50%;
+}
+input:focus ~ .bar:before, input:focus ~ .bar:after,
+input:focus ~ .bar-error:before, input:focus ~ .bar-error:after,
+input:focus ~ .bar-success:before, input:focus ~ .bar-success:after {
+  width:50%;
+}
+
 /**
  * Typography
  */
