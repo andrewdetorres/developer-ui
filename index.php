@@ -27,11 +27,14 @@
 </head>
 <body>
 
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $("body").tooltip({ selector: '[data-toggle=tooltip]' });
-      });
-    </script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("body").tooltip({ selector: '[data-toggle=tooltip]' });
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+
 
   <!--Main Navigation Bar-->
   <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-white">
@@ -40,30 +43,30 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-      </ul>
-      <ul class="navbar-nav navbar-right mr-2">
-        <li class="nav-item active my-auto mx-3">
-          <a class="nav-link text-primary" href="#">Home</a>
-        </li>
-        <li class="nav-item my-auto mx-3">
-          <a class="nav-link text-dark" href="#">Features</a>
-        </li>
-        <li class="nav-item my-auto mx-3">
-          <a class="nav-link text-dark" href="#">Samples</a>
-        </li>
-        <li class="nav-item my-auto mx-3">
-          <a class="nav-link text-dark" href="#">Licence</a>
-        </li>
-        <li class="nav-item my-auto mr-4">
+    <ul class="navbar-nav mr-auto">
+    </ul>
+    <ul class="navbar-nav navbar-right mr-2">
+      <li class="nav-item active my-auto mx-3">
+        <a class="nav-link text-primary" href="#">Home</a>
+      </li>
+      <li class="nav-item my-auto mx-3">
+        <a class="nav-link text-dark" href="#">Documentation</a>
+      </li>
+      <li class="nav-item my-auto mx-3">
+        <a class="nav-link text-dark" href="#">Samples</a>
+      </li>
+      <li class="nav-item my-auto mx-3">
+        <a class="nav-link text-dark" href="#">Licence</a>
+      </li>
+      <li class="nav-item my-auto mr-4">
         <div class="vertical-divider bg-dark"><div>
         </li>
-        <li class="nav-item my-auto mr-2">
+        <li class="nav-item my-auto mx-lg-2 py-2 py-lg-0 px-3 px-md-0">
           <a href="login.php">
             <button class="btn btn btn-outline-dark" type="submit"><i class="fab fa-github pr-2"></i>Github</button>
           </a>
         </li>
-        <li class="nav-item my-auto mx-2">
+        <li class="nav-item my-auto mx-lg-2 py-2 py-lg-0 px-3 px-md-0">
           <a href="signup.php">
             <button class="btn btn btn-outline-dark" type="submit"><i class="fas fa-download pr-2"></i>Download</button>
           </a>
@@ -74,24 +77,24 @@
 
   <!-- Hero contained-->
   <header class="section">
-      <div class="container d-flex h-100 my-5">
-          <div class="row m-auto p-0 w-100">
-            <!-- Left hand side of hero content -->
-            <div class="col-md-6 col-xs-12 my-5 text-left">
-              <h1>Welcome to <span class="text-primary">Developer-UI</span></h1>
-              <h5>A Free UI kit to speed up your developement</h5>
-              <p>Built utilising Bootstrap 4.3.1</p>
-              <button class="btn btn-primary px-3">Explore!</button>
-            </div>
-            <!-- Right hand side of hero content -->
-            <div class="col-md-6 col-xs-12 my-5 text-center">
-              <img
-                src="Assets/svg/ui_presenting.svg"
-                height="200px"
-              />
-            </div>
-          </div>
+    <div class="container d-flex h-100 my-5">
+      <div class="row m-auto p-0 w-100">
+        <!-- Left hand side of hero content -->
+        <div class="col-md-6 col-xs-12 my-5 text-left">
+          <h1>Welcome to <span class="text-primary">Developer-UI</span></h1>
+          <h5>A Free UI kit to speed up your developement</h5>
+          <p>Built utilising Bootstrap 4.3.1</p>
+          <button class="btn btn-primary px-3">Explore!</button>
+        </div>
+        <!-- Right hand side of hero content -->
+        <div class="col-md-6 col-xs-12 my-5 text-center">
+          <img
+          src="Assets/svg/ui_presenting.svg"
+          width="100%"
+          />
+        </div>
       </div>
+    </div>
   </header>
 
 
@@ -107,30 +110,11 @@
   <?php require_once "Features/alerts.html";?>
   <?php require_once "Features/navbars.html";?>
   <?php require_once "Features/images.html";?>
-  <?php require_once "Features/icons.html";?>
   <?php require_once "Features/examples.html";?>
 
-  <!-- Input Section For the UI Kit -->
-  <div class="container my-5">
-    <h1>Documentation</h1>
-    <div class="d-flex flex-wrap justify-content-around align-self-start text-dark w-100 mt-5">
-        <p>Content</p>
+  <footer class="row bg-dark py-5">
+    <div class="col-12 text-center text-light px-4">
+      Copyright © 2019 developer-ui.andrewdetorres.com
     </div>
-  </div>
-
-  <!-- Input Section For the UI Kit -->
-  <div class="container my-5">
-    <h1>Gallery</h1>
-    <div class="d-flex flex-wrap justify-content-around align-self-start text-dark w-100 mt-5">
-        <p>Content</p>
-    </div>
-  </div>
-
-  <!-- Input Section For the UI Kit -->
-  <div class="container my-5">
-    <h1>Footer</h1>
-    <div class="d-flex flex-wrap justify-content-around align-self-start text-dark w-100 mt-5">
-        <p>Content</p>
-    </div>
-  </div>
-  </html>
+  </footer>
+</html>
