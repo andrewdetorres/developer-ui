@@ -12,9 +12,6 @@
   <!-- Google Font for logo -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Righteous&display=swap" rel="stylesheet">
 
-  <!-- Bootstrap 4.3.1 CDN -->
-  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
-
   <!-- Bootstrap Jquery -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -97,7 +94,7 @@
     </div>
   </header>
 
-
+    <!-- Features List -->
   <?php require_once "Features/colors.html";?>
   <?php require_once "Features/typography.html";?>
   <?php require_once "Features/buttons.html";?>
@@ -112,6 +109,7 @@
   <?php require_once "Features/images.html";?>
   <?php require_once "Features/examples.html";?>
 
+  <!-- Footer -->
   <footer class="row bg-dark py-5">
     <div class="col-12 text-center text-light px-4">
       Copyright © 2019 developer-ui.andrewdetorres.com
