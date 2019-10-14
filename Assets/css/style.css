@@ -147,7 +147,6 @@ input:focus ~ .devui-input-label,
 input:not(:placeholder-shown) ~ .devui-input-label {
   top:-20px;
   font-size:14px;
-  color:#6D64FF;
 }
 
 .bar,
@@ -179,6 +178,7 @@ input:not(:placeholder-shown) ~ .devui-input-label {
 .bar-success:before, .bar-success:after {
   background:#28A745;
 }
+
 .bar:before,
 .bar-success:before,
 .bar-error:before {
@@ -377,3 +377,11 @@ label.custom-control-label:before {
   top: 15px;
   right: 15px;
  }
+
+ /*
+  * Maps
+  */
+  #map1, #map2 {
+    height: 300px;
+    width: 100%
+  }

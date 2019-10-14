@@ -10,4 +10,18 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+@import "./alerts.scss";
+@import "./buttons.scss";
+@import "./cards.scss";
+@import "./colors.scss";
+@import "./controls.scss";
+@import "./examples.scss";
+@import "./images.scss";
+@import "./inputs.scss";
+@import "./maps.scss";
+@import "./modals.scss";
+@import "./navbars.scss";
+@import "./tooltips.scss";
+@import "./typography.scss";
+
 @import "../bootstrap/scss/bootstrap.scss";

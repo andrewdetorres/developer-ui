@@ -32,7 +32,6 @@
 
   <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
 
-
   <!--Main Navigation Bar-->
   <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-white">
     <a class="navbar-brand ml-2 logo-font text-dark" href="/index.php">DEVELOPER-UI</a>
@@ -59,13 +58,13 @@
         <div class="vertical-divider bg-dark"><div>
         </li>
         <li class="nav-item my-auto mx-lg-2 py-2 py-lg-0 px-3 px-md-0">
-          <a href="login.php">
+          <a href="https://github.com/andrewdetorres/developer-ui" target="_blank">
             <button class="btn btn btn-outline-dark" type="submit"><i class="fab fa-github pr-2"></i>Github</button>
           </a>
         </li>
         <li class="nav-item my-auto mx-lg-2 py-2 py-lg-0 px-3 px-md-0">
-          <a href="signup.php">
-            <button class="btn btn btn-outline-dark" type="submit"><i class="fas fa-download pr-2"></i>Download</button>
+          <a href="testdownload.txt" download="testdownload.txt">
+            <button class="btn btn btn-outline-dark"><i class="fas fa-download pr-2"></i>Download</button>
           </a>
         </li>
       </ul>
@@ -94,7 +93,10 @@
     </div>
   </header>
 
-    <!-- Features List -->
+  <!-- google Maps API -->
+
+
+  <!-- Features List -->
   <?php require_once "Features/colors.html";?>
   <?php require_once "Features/typography.html";?>
   <?php require_once "Features/buttons.html";?>
@@ -107,8 +109,9 @@
   <?php require_once "Features/alerts.html";?>
   <?php require_once "Features/navbars.html";?>
   <?php require_once "Features/images.html";?>
+  <?php require_once "Features/maps.php";?>
   <?php require_once "Features/examples.html";?>
-
+  <i class="fad fa-battery-full" style="--fa-primary-color: limegreen; --fa-secondary-color: dimgray;"></i>
   <!-- Footer -->
   <footer class="row bg-dark py-5">
     <div class="col-12 text-center text-light px-4">
