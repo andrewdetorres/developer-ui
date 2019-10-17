@@ -1,0 +1,26 @@
+/**
+* Switch
+*/
+.custom-control {
+  .custom-control-input{
+    &:checked {
+      ~ .custom-control-label::before {
+        border-color: #343a40;
+        background-color: #343A3C;
+      }
+    }
+    &:disabled:checked{
+      ~ .custom-control-label::before {
+        background-color: #e9ecef;
+        border-color: #adb5bd;
+      }
+    }
+  }
+  label.custom-control-label {
+    margin-bottom: 5px;
+    
+    &:before {
+      box-shadow: none !important;
+    }
+  }
+}

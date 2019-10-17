@@ -1,0 +1,47 @@
+/**
+* Checkbox
+*/
+label.checkbox {
+  margin-bottom: 5px;
+  
+  input {
+    display: none;
+    z-index: -9999;
+    
+    &:checked {
+      + span {
+        background: #343a40;
+        background-image: url("https://developer-ui.andrewdetorres.com/assets/images/Checkbox-mark.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+    &:disabled {
+      + span {
+        background: #d6d6d6;
+        border: 2px solid #d6d6d6;
+      }
+    }
+    
+    &:checked:disabled {
+      + span {
+        background: #d6d6d6;
+        border: 2px solid #d6d6d6;
+        background-image: url("https://developer-ui.andrewdetorres.com/assets/images/Checkbox-mark.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+  span {
+    position: relative;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background: #ffffff;
+    border: 2px solid #343a40;
+  }
+}

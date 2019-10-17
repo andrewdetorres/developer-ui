@@ -9,32 +9,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <!-- Google Font for logo -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat|Righteous&display=swap" rel="stylesheet">
 
-  <!-- Bootstrap Jquery -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" href="Assets/css/main.css"/>
-  <link rel="stylesheet" href="Assets/css/style.css"/>
-  <link rel="stylesheet" href="Assets/fonts/fontawesome/css/all.min.css"/>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+  <link rel="stylesheet" href="assets/css/main.css"/>
 
+  <!-- Google Font for logo   -->
+  <link href="assets/fonts/fontawesome/css/all.min.css" rel="stylesheet" />
 </head>
 <body>
 
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $("body").tooltip({ selector: '[data-toggle=tooltip]' });
-    });
-  </script>
-
-  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
-
   <!--Main Navigation Bar-->
   <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-white">
-    <a class="navbar-brand ml-2 logo-font text-dark" href="/index.php">DEVELOPER-UI</a>
+    <a class="navbar-brand ml-2 logo-font text-dark" href="/index.php"><h1>Developer-UI</h1></a>
     <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -85,7 +75,7 @@
         <!-- Right hand side of hero content -->
         <div class="col-md-6 col-xs-12 my-5 text-center">
           <img
-          src="Assets/svg/ui_presenting.svg"
+          src="assets/svg/ui_presenting.svg"
           width="100%"
           />
         </div>
@@ -93,10 +83,7 @@
     </div>
   </header>
 
-  <!-- google Maps API -->
-
-
-  <!-- Features List -->
+  <!-- Features List - features can be found by navigating to the features folder. -->
   <?php require_once "Features/colors.html";?>
   <?php require_once "Features/typography.html";?>
   <?php require_once "Features/buttons.html";?>
@@ -109,13 +96,23 @@
   <?php require_once "Features/alerts.html";?>
   <?php require_once "Features/navbars.html";?>
   <?php require_once "Features/images.html";?>
-  <?php require_once "Features/maps.php";?>
+  <?php require_once "Features/maps.html";?>
   <?php require_once "Features/examples.html";?>
-  <i class="fad fa-battery-full" style="--fa-primary-color: limegreen; --fa-secondary-color: dimgray;"></i>
+
   <!-- Footer -->
   <footer class="row bg-dark py-5">
     <div class="col-12 text-center text-light px-4">
       Copyright © 2019 developer-ui.andrewdetorres.com
     </div>
   </footer>
+
+  <!-- Bootstrap Jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <?php require_once "Config/google-api.html";?>
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=[YOUR_API_KEY]&callback=initMap"
+async defer></script> -->
 </html>
+
+
+

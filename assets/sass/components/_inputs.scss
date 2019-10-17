@@ -1,0 +1,121 @@
+/**
+ * Custom input test
+ */
+
+.group {
+  position:relative;
+  margin-bottom:35px;
+
+  input {
+    font-size:18px;
+    padding:10px 10px 10px 5px;
+    display:block;
+    border:none;
+    border-bottom: 1px solid $dark;
+
+    &:focus {
+      outline:none;
+
+      ~ .devui-input-label {
+        top:-20px;
+        font-size:14px;
+      }
+    }
+    &:not(:placeholder-shown) {
+      ~ .devui-input-label {
+        top:-20px;
+        font-size:14px;
+      }
+    }
+    &:disabled {
+      border-bottom: 1px solid $light;
+      background-color: $light;
+      ~ label {
+        color: $dark;
+      }
+    }
+  }
+  .input-error {
+    &:valid {
+      color: $danger;
+      border-color: $danger;
+    }
+  }
+  .input-success {
+    &:valid {
+      color: $success;
+      border-color: $success;
+    }
+  }
+
+  .devui-input-label {
+    position:absolute;
+    pointer-events:none;
+    left:5px;
+    top:10px;
+    transition:0.2s ease all;
+    -moz-transition:0.2s ease all;
+    -webkit-transition:0.2s ease all;
+  }
+
+  .bar,
+  .bar-error,
+  .bar-success {
+    position:relative;
+    display:block;
+    width:300px;
+
+    &:before, &:after{
+      content:'';
+      height:2px;
+      width:0;
+      bottom:1px;
+      position:absolute;
+      transition:0.2s ease all;
+      -moz-transition:0.2s ease all;
+      -webkit-transition:0.2s ease all;
+    }
+    &:before {
+        left:50%;
+    }
+    &:after {
+      right:50%;
+    }
+  }
+
+  .bar{
+    &:before, &:after {
+      background: $dark;
+    }
+  }
+  .bar-error{
+    &:before, &:after {
+      background: $danger;
+    }
+  }
+  .bar-success{
+    &:before, &:after {
+      background: $success;
+    }
+  }
+
+  input:focus ~ .bar:before, input:focus ~ .bar:after,
+  input:focus ~ .bar-error:before, input:focus ~ .bar-error:after,
+  input:focus ~ .bar-success:before, input:focus ~ .bar-success:after {
+    width:50%;
+  }
+}
+
+::-webkit-input-placeholder {
+  color: $dark;
+}
+::-moz-placeholder {
+  color: $dark;
+}
+:-ms-input-placeholder {
+  color: $dark;
+}
+:-moz-placeholder {
+  color: $dark;
+}
+
