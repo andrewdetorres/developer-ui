@@ -1,0 +1,7 @@
+// square 
+@mixin square($v) {
+  min-width: $v;
+  min-height: $v;
+  max-width: $v;
+  max-height: $v;
+}

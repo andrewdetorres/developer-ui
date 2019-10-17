@@ -1,0 +1,21 @@
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+// Import utilities
+@import "../utils/variables";
+@import "../utils/mixins";
+
+// Import Bootstrap
+@import "../../bootstrap/scss/bootstrap.scss";
+
+// Import Custom scss
+@import "../components/cards";
+@import "../components/checkbox";
+@import "../components/colors";
+@import "../components/inputs";
+@import "../components/maps";
+@import "../components/navbars";
+@import "../components/radio";
+@import "../components/switch";

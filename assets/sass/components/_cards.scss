@@ -1,0 +1,50 @@
+.devui-card {
+  position: relative;
+  width: 90%;
+  max-width: 21rem;
+  margin: auto;
+  overflow: hidden;
+  
+  .devui-card-overlay {
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    bottom: 0px;
+    border-radius: 5px;
+  }
+  .devui-card-image{
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .devui-card-details {
+    position: absolute;
+    text-align: right;
+    padding-left: 1em;
+    padding-right: 1em;
+    bottom: 15px;
+    right: 15px;
+    line-height:0px;
+    color: #fff;
+    font-size: 0.8em;
+  }
+  .card-tilt {
+    -webkit-clip-path: polygon(0 0%, 100% 0, 100% 90%, 0% 100%);
+    clip-path: polygon(0 0%, 100% 0, 100% 90%, 0% 100%);
+    .tilt-details {
+      font-size: 1.2em;
+      top: 15px;
+      left: 0px;
+    }
+    .devui-card-overlay-2 {
+      background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0));
+      position: absolute;
+      top:0px;
+      height: 50%;
+      width: 100%;
+      bottom: 0px;
+      border-radius: 5px;
+    }
+  }
+}

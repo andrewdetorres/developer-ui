@@ -1,0 +1,9 @@
+/**
+ * Colors Sections
+ */
+.color-box {
+  @include square(75px);
+}
+.devui-tag {
+  font-size: 0.7em;
+}
