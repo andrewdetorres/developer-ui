@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Huffet Media</title>
+  
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="../assets/css/main.css"/>
+  <link rel="stylesheet" href="../assets/css/style.css"/> 
+ 
+  <!-- Google Font for logo   -->
+  <link href="../assets/fonts/fontawesome/css/all.min.css" rel="stylesheet" />
+
+</head>
+<body>
+  <!--Main Navigation Bar-->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-white">
+    <a class="navbar-brand ml-2 logo-font text-dark" href="/index.php">
+      <img src="./assets/images/logo.png" height="50px"/>
+    </a>
+    <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+      </ul>
+      <ul class="navbar-nav navbar-right mr-2">
+        <li class="nav-item active my-auto mx-3 text-center">
+          <a class="nav-link text-primary" href="#">Home</a>
+        </li>
+        <li class="nav-item my-auto mx-3 text-center">
+          <a class="nav-link text-dark" href="#">UI-Kits</a>
+        </li>
+        <li class="nav-item my-auto mx-3 text-center">
+          <a class="nav-link text-dark" href="#">Blog</a>
+        </li>
+        <li class="nav-item my-auto mx-3 text-center">
+          <a class="nav-link text-dark" href="#">Contact</a>
+        </li>
+        <li class="nav-item my-auto">
+          <div class="vertical-divider bg-dark"><div>
+        </li>
+        <li class="nav-item text-center my-auto mx-lg-2 py-2 py-lg-0 px-3 px-md-0">
+          <a href="#" class="nav-link text-dark">
+            <button class="btn btn btn-transparent">Login</button>
+          </a>
+        </li>
+        <li class="nav-item text-center my-auto mx-lg-2 py-2 py-lg-0 px-3 px-md-0">
+          <a href="#" class="nav-link text-dark">
+            <i class="fas fa-shopping-cart text-dark pr-4"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="section">
+    <div class="container d-flex h-100 my-5">
+      <div class="row m-auto p-0 w-100">
+        <!-- Left hand side of hero content -->
+        <div id="scroller" class="col-12 my-5 text-center">
+          <h1>Welcome to <span class="text-primary">
+            <img src="./assets/images/logo.png" height="75px"/>
+          </h1>
+          <p>Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipiscing elit.</p>
+          <button class="btn btn-primary px-3">Explore!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section tilt-right bg-primary">
+  </div>
+</body>
+
+<script>
+  $(window).scroll(() => {
+    var scroll = $(this).scrollTop();
+    console.log(scroll);
+
+    $('#scroller').css({
+      "transform": "translate(0px, "+scroll/3+"px)"
+    })
+  })
+</script>
+
+<!-- Bootstrap Jquery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+
+</html>
